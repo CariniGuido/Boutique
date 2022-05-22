@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="gridContacto">
+        <header class="header">
+            <a href="/index.html"><img class="header__logo" src="./../assets/img/logoNegro.png" alt="logo"></a>
+    
+            <div class="header__menuContainer">
+                <Nav class="header__menuNav">
+                    <UL class="header__menuNav__item">
+                        <li> <a href="./../index.html">Inicio</a></li>
+                        <li> <a href="/pages/producto.html">Productos</a></li>
+                        <li> <a href="/pages/marcas.html">Marcas</a></li>
+                        <li> <a href="/pages/promociones.html">Promociones</a></li>
+                        <li> <a href="./contacto.html">Contacto</a></li>
+                    </UL>
+                </Nav>
+    
+                <form class="header__menuBuqueda" action="">
+                    <input type="search" id="busquedaproducto" placeholder="producto, marca">
+                    <input type="submit" id="botonbuscar" value="Buscar">
+                    <!--también lo pudiera colcoar así, <buttom type: "submit">Buscar</button>-->
+                </form>
+            </div>
+    
+        </header>
+                
+            <section class="section__contacto">
+                <h1>Contactar Ahora</h1>
+                <h3>¡Estaremos encantados de responder tus consultas!</h3>
+                <form action="" class="section__contacto__containerFormulario">
+                    <div>
+                        <input class="formulario__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    </div>
+    
+                    <div>
+                        <input class="formulario__input" type="text" id="apellido" name="apellido" placeholder="Apellido">
+                    </div>
+    
+                    <div>
+                        <input class="formulario__input" type="email" id="email" name="email"
+                            placeholder="correo@gmail.com">
+                    </div>
+    
+                    <div>
+                        <textarea class="formulario__textarea" placeholder="Observaciones" name="mensaje"></textarea>
+                    </div>
+    
+                    <div>
+                        <input class="formulario__input__boton" type="submit" id="botonenviar" value="Enviar">
+                    </div>
+                </form>
+            </section>
+    
+            <section class="mapa">
+                <h2>Nuestra Ubicación</h2>
+                <iframe class="mapa_ubicacion"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.0064035159683!2d-58.41506476319437!3d-34.60383765806939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8bad633cbd%3A0x77836faeba3588ee!2sS%C3%A1nchez%20de%20Bustamante%20515%2C%20C1173%20ABI%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647540868487!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        
+        <footer class="footer">  
+            <div class="footer__container">
+    
+                <div class="columna__logo">
+                    <a href="/index.html"><img class="header__logo" src="./../assets/img/logoBlanco.png"
+                            alt="logo"></a>
+                </div>
+    
+                <div class="columnaMapa_informacion">
+                    <div class="columna_mapa">
+                        <iframe class="columna__mapa_image"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.0064035159683!2d-58.41506476319437!3d-34.60383765806939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8bad633cbd%3A0x77836faeba3588ee!2sS%C3%A1nchez%20de%20Bustamante%20515%2C%20C1173%20ABI%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647540868487!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+    
+                    <div class="columna__informacion">
+                        <h3 class="columna__title">Información de contacto</h3>
+                        <ul class="columna__informacion_ul">
+    
+                            <li class="columna__informacion_ulLi">
+                                <a href="https://www.google.com/maps/place/S%C3%A1nchez+de+Bustamante+515,+C1173+ABI,+Buenos+Aires/@-34.6037869,-58.4165417,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca8bad633cbd:0x77836faeba3588ee!8m2!3d-34.6037869!4d-58.414353"
+                                    target="_blank" class="informacion__contacto"><img class="columna__informacion__image"
+                                        src="./../assets/img/logoUbicacion.png" alt=""> Dirección: Sanchez de Bustamante
+                                    515
+                                    -Argentina</a>
+                            </li>
+    
+                            <li class="columna__informacion_ulLi">
+                                <a href="https://wa.me/1127464019?text=¡Hola!" class="informacion__contacto"
+                                    target="_blank"><img class="columna__informacion__image"
+                                        src="./../assets/img/logoTelefono.png" alt=""> Teléfono de contacto: +54 9 11
+                                    27464019</a>
+                            </li>
+                            <li class="columna__informacion_ulLi">
+                                <a href="mailto:loriana.mari@gmail.com" class="informacion__contacto"><img
+                                        class="columna__informacion__image" src="./../assets/img/logoMail.png" alt="">
+                                    Correo: Loriana.mari@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+      
+                <div class="columna__redes">
+                    <h3 class="columna__title">Síganos</h3>
+                    <ul class="columna__redes__ul">
+                        <li class="columna__redes__ulLi">
+                            <a href="https://es-la.facebook.com/" target="_blank"><img class="columna__redes__image"
+                                    src="./../assets/img/logoFacbook.png" alt="Logo Facebook"></a>
+                        </li>
+    
+                        <li class="columna__redes__ulLi">
+                            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="columna__redes__image"
+                                    src="./../assets/img/logoinstagram.png" alt="Logo Facebook"></a>
+                        </li>
+                    </ul>  
+                </div>  
+            </div>
+    
+            <div class="footer__derechos">
+                <p>Derechos reservados por el autor</p>
+            </div>
+    
+        </footer>
+    </div>
+    
+
+</body>
+
+</html>

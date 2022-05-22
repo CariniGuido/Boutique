@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: white;
+}
+
+li,
+a {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+h2 {
+    color: gray;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.precio {
+    color: #7d8c96;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+span {
+    color: red;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+#check {
+    display: none;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0.65rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(128, 128, 128);
+    border-bottom: solid;
+    border-width: 0.063rem;
+
+}
+
+nav label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid gr;
+    cursor: pointer;
+}
+
+.header__logo {
+    width: 14rem;
+    cursor: pointer;
+}
+
+.header__menuContainer {
+    display: flex;
+}
+
+.header__menuNav__item {
+    list-style: none;
+}
+
+.header__menuNav__item li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.header__menuNav__item li a:hover {
+    color: rgb(128, 128, 128);
+}
+
+.header__menuBuqueda {
+    padding: 1rem;
+    margin-left: 3.2rem;
+    margin-right: 1.25rem;
+}
+
+.sectionUno {
+    grid-area: sectionUno;
+}
+
+.main__sectionBanner__Image {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.sectionDos {
+    grid-area: sectionDos;
+}
+
+.main__sectionNovedades__container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.card__product {
+    width: 25%;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.063rem;
+    margin: 1rem;
+    transition: tranform 3s;
+}
+
+.card__product:hover {
+    transform: scale(1.1);
+}
+
+.card__product__image {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card__product__text {
+    padding: 0.65rem;
+    margin-top: 0.313rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.25rem;
+}
+
+.card__product__title {
+    margin: 0.65rem;
+    text-align: center;
+    color: black;
+}
+
+.card__product__action {
+    background-color: rgba(3, 68, 132, 1);
+    display: block;
+    width: 50%;
+    padding: 0.313rem;
+    margin: auto;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 3.125rem;
+}
+
+.card__product__action:hover {
+    background-color: black;
+    
+}
+
+.borderRounded {
+    border-radius: 0.65rem;
+}
+
+.videoNovedades {
+    grid-area: videoNovedades;
+    width: 65rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.videoPerfume {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionTres {
+    grid-area: sectionTres;
+    margin: 5rem 0px;
+}
+
+.perfumes__mujer {
+    display: block;
+    width: 70%;
+    transition: all 300ms;
+    position: relative;
+    margin: auto;
+    height: auto;
+}
+
+.perfumes__mujer:hover {
+    transform: scale(1.15);
+}
+
+.sectionCuatro {
+    grid-area: sectionCuatro;
+    margin: 5rem 0px;
+}
+
+.perfumes__hombre {
+    display: block;
+    width: 70%;
+    transition: all 300ms;
+    position: relative;
+    margin: auto;
+    height: auto;
+}
+
+.perfumes__hombre:hover {
+    transform: scale(1.15);
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer__container {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 0.65rem;
+    padding-bottom: 0.313rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+}
+
+.columna__logo {
+    margin-top: 3.5rem;
+}
+
+.columna__title {
+    color: rgb(250, 235, 215);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.columnaMapa_informacion {
+    display: flex;
+}
+
+.columna__mapa_image {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 1.65rem;
+    margin-right: 1.5rem;
+}
+
+.columna__informacion {
+    margin-bottom: 1.5rem;
+    margin-top: auto;
+}
+
+.columna__informacion__image {
+    width: 2rem;
+    height: 2rem;
+}
+
+.columna__informacion_ul {
+    list-style: none;
+}
+
+.informacion__contacto {
+    font-weight: normal;
+    color: rgb(250, 235, 215);
+}
+
+.informacion__contacto:hover {
+    color: white;
+}
+
+.columna__redes__ul {
+    list-style: none;
+}
+
+.columna__redes__ulLi {
+    display: inline-block;
+}
+
+.columna__redes__image {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    object-position: center;
+    margin-right: auto;
+}
+
+.footer__derechos {
+    color: black;
+    background-color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*páginas PRODUCTOS y PROMOCIONES*/
+
+.main__sectionProducto {
+    grid-area: main__sectionProducto;
+}
+
+.main__sectionProducto__container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__sectionProducto {
+    width: 20%;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.063rem;
+    margin: 1.25rem;
+}
+
+.card__sectionProducto__image {
+    width: 100%;
+}
+
+.card__sectionProducto__title {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 1.25rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card__product__actionCarrito {
+    background-color: rgba(3, 68, 132, 1);
+    display: block;
+    width: 60%;
+    padding: 0.313rem;
+    margin: auto;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 3.125rem;
+    transition: transform 1s;
+}
+
+.card__product__actionCarrito:hover {
+    transform: scale(1.2);
+}
+
+.card__product__actionCarrito:hover {
+    background-color: black;
+}
+
+.tituloPromociones {
+    color: #000046;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%{
+        transform: scale(1);
+        color: #000046;
+    }
+    50%{
+        transform: scale(1.2);
+        color: #1c9ea3;
+    }
+
+    100%{
+        transform: scale(1);
+        color: #000046;
+    }
+}
+/*PÁGINA MARCAS*/
+.sectionMarcas {
+    grid-area: sectionMarcas;
+}
+
+.section__marcasContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__marcasContainer__ulLi {
+    width: 25%;
+    margin: 1rem;
+}
+
+.marcas__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+/*página CONTACTO*/
+.section__contacto {
+    grid-area: section__contacto;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.section__contacto__containerFormulario {
+    width: 100%;
+    max-width: 30rem;
+    padding: 2rem 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5);
+}
+
+.formulario__input {
+    width: 18.75rem;
+    height: 2.5rem;
+    margin: 0.313rem;
+    text-align: center;
+    border-radius: 0.65rem;
+}
+
+.formulario__textarea {
+    width: 18.75rem;
+    height: 6.25rem;
+    text-align: center;
+    border-radius: 0.65rem;
+    border-width: 0.125rem;
+    margin: 0.313rem;
+}
+
+.formulario__input__boton {
+    width: 4.375rem;
+    height: 2rem;
+    background-color: rgb(219, 211, 211);
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulario__input__boton:hover {
+    background-color: rgb(196, 193, 193);
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+.mapa_ubicacion {
+    width: 65rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+/*VISTA DESKTOP*/
+@media screen and (min-width: 1108px) {
+    .gridContainer {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "sectionUno sectionUno sectionUno sectionUno sectionUno sectionUno"
+            "sectionDos sectionDos sectionDos sectionDos sectionDos sectionDos"
+            "videoNovedades videoNovedades videoNovedades videoNovedades videoNovedades videoNovedades"
+            "sectionTres sectionTres sectionTres  sectionCuatro sectionCuatro sectionCuatro"
+            "footer footer footer footer footer footer ";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100px auto 1fr 1fr auto auto;
+    }
+
+
+    /*página PRODUCTO y PROMOCIONES*/
+
+    .gridProduct {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main__sectionProducto main__sectionProducto main__sectionProducto"
+        "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 1fr auto;
+    }
+
+    /*página MARCAS*/
+
+    .gridMarcas {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "sectionMarcas sectionMarcas sectionMarcas"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 1fr auto;
+    }
+
+
+    /*página CONTACTO*/
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "section__contacto section__contacto section__contacto"
+            "mapa mapa mapa"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 1fr auto auto;
+    }
+}
+
+/*VISTA TABLET*/ /*apliqué para table sólo cambios en el header y el color del formulario de contacto, el resto lo quise mantener por ahora distribuido de la misma manera que la versión desktop*/
+@media screen and (min-width: 800px) and (max-width: 1107px) {
+    .gridContainer {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "sectionUno sectionUno sectionUno sectionUno"
+            "sectionDos sectionDos sectionDos sectionDos"
+            "videoNovedades videoNovedades videoNovedades videoNovedades"
+            "sectionTres sectionTres  sectionCuatro sectionCuatro"
+            "footer footer footer footer";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 150px auto 1fr 1fr auto auto;
+    }
+
+
+    .header__menuContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videoNovedades {
+        grid-area: videoNovedades;
+        width: 80%;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*página PRODUCTO y PROMOCIONES*/
+
+    .gridProduct {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main__sectionProducto main__sectionProducto main__sectionProducto"
+        "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 1fr auto;
+    }
+
+
+    /*página MARCAS*/
+
+    .gridMarcas {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "sectionMarcas sectionMarcas sectionMarcas"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 1fr auto;
+    }
+
+
+
+    /*página CONTACTO*/
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "section__contacto section__contacto section__contacto"
+            "mapa mapa mapa"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 1fr auto auto;
+    }
+
+    .section__contacto__containerFormulario {
+        background: linear-gradient(to right, #3f2b96, #a8c0ff); 
+    }
+}
+
+/*--------------------------*/
+
+/*VISTA MOBILE*/
+@media screen and (max-width: 799px) {
+    .gridContainer {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sectionUno sectionUno"
+            "sectionDos sectionDos"
+            "videoNovedades videoNovedades"
+            "sectionTres sectionTres"
+            "sectionCuatro sectionCuatro"
+            "footer footer";
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 280px auto 1fr auto auto auto;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav label {
+        display: block;
+
+    }
+
+    .header__menuContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .header__menuNav__item li {
+        display: block;
+        padding: 1rem;
+        line-height: 0px;
+        text-align: center; 
+    }
+
+    .header__menuBuqueda {
+        width: 90%;
+    }
+
+
+    .main__sectionBanner__Image {
+        height: 80%;
+    
+    }
+
+
+    .main__sectionNovedades__container {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .card__product {
+        width: 60%;
+    }
+
+    .videoNovedades {
+        grid-area: videoNovedades;
+        width: 30rem;
+        height: 25rem;
+    }
+
+    .sectionTres {
+        grid-area: sectionTres;
+        margin: 2rem 0px;
+    }
+
+    .perfumes__mujer {
+        display: block;
+        width: 50%;
+    }
+
+    .sectionCuatro {
+        grid-area: sectionCuatro;
+        margin: 2rem 0px;
+    }
+
+    .perfumes__hombre {
+        display: block;
+        width: 50%;
+    }
+
+    .footer__container {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .columna__title {
+        text-align: center;
+    }
+
+    .columnaMapa_informacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .columna__informacion_ulLi {
+        text-align: center;
+    
+    }
+
+    /*página PRODUCTO Y promociones*/
+
+    .gridProduct {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main__sectionProducto main__sectionProducto"
+            "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 280px 1fr auto;
+    }
+
+    .card__sectionProducto {
+        width: 100%;
+    }
+
+
+    /*página MARCAS*/
+
+    .gridMarcas {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sectionMarcas sectionMarcas"
+            "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 280px 1fr auto;
+    }
+
+
+    .section__marcasContainer__ulLi {
+        width: 40%;
+    }
+
+    /*página CONTACTO*/
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "section__contacto section__contacto"
+            "mapa mapa"
+            "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 280px 1fr auto auto;
+    }
+
+    .section__contacto__containerFormulario {
+        width: 75%;
+        background: linear-gradient(to right, #1CB5E0, #000046);
+    }
+
+    .formulario__input {
+        width: 80%;
+    }
+    
+    .formulario__textarea {
+        width: 80%;
+    }
+    
+    .formulario__input__boton {
+        width: 4rem;
+    }
+
+    .mapa_ubicacion {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .viejo-borracho {
+    margin-top: 50px;
+}}
